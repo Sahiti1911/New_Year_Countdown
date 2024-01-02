@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins";
+  color: rgb(240, 240, 240);
+  font-size: 10px;
+  overflow: hidden;
+}
+
+/* Reset default margin/padding */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the image cover the entire screen */
+.fullscreen-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the entire area without distortion */
+  display: none; /* Initially hide the image */
+}
+
+.container {
+  z-index: 99999999;
+}
+
+.countdown {
+  text-align: center;
+  margin-top: 14rem;
+  font-size: 3rem;
+}
+
+.countdown-container span {
+  font-size: 30px;
+  color: #cacaca;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.time {
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  border: 4px solid #96a8a7;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  backdrop-filter: blur(10px);
+}
